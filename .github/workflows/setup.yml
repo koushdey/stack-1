@@ -1,0 +1,20 @@
+name: hello
+on:
+  workflow_dispatch:
+    inputs:
+      who:
+        description: 'Hello who?'
+        default: 'world'
+      let:
+        description: 'Dummy input'
+        default: 'dummy'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    
+    - run: |
+        # sleep 20
+        echo Hello, ${{ github.event.inputs.who }}!
+        echo Let, ${{ github.event.inputs.let }}!
