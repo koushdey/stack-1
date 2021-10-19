@@ -21,7 +21,7 @@ inputs:
     required: true
 
   - name: ProductionEnvReviewer
-    description: GitHub handle of the production environment reviewer
+    description: GitHub handle of the production environment  reviewer
 
   - name: Enable_Vulnerability_Alerts
     description: Enable Vulnerability Alerts
